@@ -1,0 +1,82 @@
+*{margin: 0;padding: 0;}
+/* css reset */
+ul,li{list-style: none;box-sizing: border-box;}
+*:before,*:after{box-sizing: border-box;}
+
+
+/* style */
+body{background: #050a44;}
+.globalHeader{
+margin: 20px ;
+display: flex;
+justify-content: space-between;
+}
+.globalHeader>input{
+    width: 100%;
+    margin-right: 10px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #e14efb;
+    border-radius: 2px;
+}
+.globalHeader>button{
+    white-space: nowrap;
+     padding: 0 15px;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    background-color: #e14efb; 
+}
+.globalMain{
+
+}
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    margin:  20px;
+    justify-content: space-between;
+}
+.siteList >li{
+margin-bottom: 10px;
+    background-color: #e14efb;
+padding: 10px 0;
+color: #fff;
+   
+}
+.siteList .site{
+width: 160px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.siteList .site > .logo{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+
+}
+.siteList .site > .link{
+margin-top: 5px;
+color: #fff;
+}
+.siteList .iconButton{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.siteList .iconButton .icon{
+    width:50px;
+    height:50px;
+    
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
