@@ -5,13 +5,13 @@ ul,li{list-style: none;box-sizing: border-box;}
 
 
 /* style */
-body{background: #050a44;font-family: Arial, Helvetica, sans-serif;}
+body{background: #050a44;font-family: '微软雅黑'，Arial, Helvetica, sans-serif;}
 .globalHeader{
 margin: 20px ;
 display: flex;
 justify-content: space-between;
 }
-.globalHeader>input{
+.searchForm>input{
     width: 100%;
     margin-right: 10px;
     height: 40px;
@@ -20,7 +20,7 @@ justify-content: space-between;
     border: 1px solid #e14efb;
     border-radius: 2px;
 }
-.globalHeader>button{
+.searchForm>button{
     white-space: nowrap;
      padding: 0 15px;
     color: #fff;
