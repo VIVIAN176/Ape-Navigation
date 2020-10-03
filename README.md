@@ -5,7 +5,7 @@
 ### 开发
 ```
 yarn global add parcel-bundler
-parcel index.html
+parcel src/index.html
 ```
 ### build
 ```
