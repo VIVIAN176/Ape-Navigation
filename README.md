@@ -20,3 +20,11 @@ yarn build
 
 ### 后续
 可以用 Vue / React 重写这个项目，考虑添加各种炫酷的背景图片或动画
+
+### 感谢
+灵感来源
+
+- [Web前端导航](http://www.alloyteam.com/nav/)
+- [导航1](http://hao.shejidaren.com/)
+- [导航2](http://so.uigreat.com/)
+- [导航3](http://pm265.com/)
