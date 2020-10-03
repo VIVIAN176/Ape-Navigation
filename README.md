@@ -8,7 +8,9 @@ yarn global add parcel-bundler
 parcel index.html
 ```
 ### build
-`yarn build`
+```
+yarn build
+```
 
 ### 技术栈
 - jQuery
