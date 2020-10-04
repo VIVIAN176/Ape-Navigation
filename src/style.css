@@ -73,8 +73,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
-
+ .siteList .site > .close{
+   position: absolute;
+   top: -12px;
+   right: -6px;
+   font-size: 18px;
+   color: #e9eaf833;
+ }
 .siteList .site > .logo {
   width: 50px;
   height: 50px;
