@@ -19,7 +19,7 @@ ul, li {
 
 
 body {
-  background: #050a44;
+  background: #060931;
   font-family: '微软雅黑', Arial, Helvetica, sans-serif;
   padding: 0 15px;
 }
@@ -32,10 +32,10 @@ body {
   margin: 28px 0;
   display: flex;
   height: 35px;
+  justify-content: center;
 }
 
 .searchForm > input {
-  width: 70%;
   border: 1px solid #2c3169;
   border-radius: 2px;
   background: #2c31691a;
@@ -44,8 +44,8 @@ body {
 }
 
 .searchForm > button {
-  width: 30%;
-  margin-left: 10px;
+  width: 90px;
+  margin-left: 5px;
   font-family: '微软雅黑', Arial, Helvetica, sans-serif;
   border: none;
   background: #2c3169;
@@ -53,21 +53,24 @@ body {
 }
 
 .globalMain {
-
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .siteList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .siteList > li {
-  width: 30%;
+  width: 100px;
   margin-bottom: 15px;
-  border: 2px solid #211d5c;
+  border: 2px solid #0a0f45;
   padding: 10px;
   color: #f1f2ff;
+  background: #0a1039;
+  margin-right: 10px;
 }
 
 .siteList .site {
@@ -76,14 +79,20 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 .siteList .site > .close {
   position: absolute;
   top: -12px;
   right: -6px;
-  font-size: 18px;
+  font-size: 22px;
   color: #e9eaf833;
+  display: none;
+  cursor: default;
+}
+.siteList .site:hover > .close{
+  display: inline-block;
 }
 
 .siteList .site > .logo {
@@ -103,7 +112,7 @@ body {
 
 .siteList .site > .link {
   margin-top: 5px;
-  color: #6c6e8f;
+  color: #cbcdde57;
   font-size: 14px;
 }
 
@@ -119,4 +128,16 @@ body {
 .siteList .iconButton .icon {
   width: 50px;
   height: 50px;
+}
+
+@media (min-width:500px) {
+  .searchForm{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .globalHeader{
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
 }

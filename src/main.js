@@ -5,13 +5,13 @@ const mylink = JSON.parse(localStorage.getItem('mylink'))
 
 // 如果mylink不存在 hasMap就取后面的值
 const hasMap = mylink || [
-  {logo: 'B', logoType: 'image', url: './images/bili.png'},
   {logo: 'U', logoType: 'text', url: 'http://www.ui.cn'},
-  {logo: 'D', logoType: 'text', url: 'https://dribbble.com/dsf'},
-  {logo: 'G', logoType: 'text', url: 'https://gitee.com/dfs'},
   {logo: 'I', logoType: 'text', url: 'https://www.iconfont.cn/a/d/s'},
-  {logo: 'V', logoType: 'text', url: 'https://cn.vuejs.org'},
+  {logo: 'D', logoType: 'text', url: 'https://dribbble.com/dsf'},
   {logo: 'E', logoType: 'text', url: 'https://element.eleme.cn'},
+  {logo: 'B', logoType: 'image', url: './images/bili.png'},
+  {logo: 'G', logoType: 'text', url: 'https://gitee.com/dfs'},
+  {logo: 'V', logoType: 'text', url: 'https://cn.vuejs.org'},
 ]
 const simplifyUrl = (url) => {//https:qq.com.cn
    let url1=url.replace('https://', '')
