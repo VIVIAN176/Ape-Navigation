@@ -86,7 +86,9 @@ body {
   color: #f1f2ff;
 
 }
-
+.siteList .site > .logo img{
+  width: 100%;
+}
 .siteList .site > .link {
   margin-top: 5px;
   color: #6c6e8f;
