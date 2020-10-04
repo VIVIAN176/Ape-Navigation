@@ -26,7 +26,7 @@ const simplifyUrl = (url) => {//https:qq.com.cn
 }
 const render = () => {
   $sieList.find('li:not(.last)').remove()
-  hasMap.forEach(node => {
+  hasMap.forEach((node,index) => {
     const $li = $(`<li>
         <div class="site">
           <div class="logo">${node.logo}</div>
@@ -42,8 +42,9 @@ const render = () => {
       window.open(node.url)
     })
     $li.on('click','.close',(e)=>{
-      console.log('hear')
       e.stopPropagation()
+      hasMap.splice(index,1)
+      render()
     })
   })
 }
