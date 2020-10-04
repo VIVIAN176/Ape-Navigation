@@ -71,4 +71,10 @@ window.onbeforeunload = () => {
   const string = JSON.stringify(hasMap)
   localStorage.setItem('mylink', string)
 }
-
+$(document).on('keypress',(e)=>{
+  const {key}=e
+  for (let i=0;i<hasMap.length;i++){
+    if(hasMap[i].logo||hasMap[i].logo.toLowerCase())
+    window.open(hasMap[i].url)
+  }
+})
