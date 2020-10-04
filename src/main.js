@@ -6,14 +6,24 @@ const mylink = JSON.parse(localStorage.getItem('mylink'))
 // 如果mylink不存在 hasMap就取后面的值
 const hasMap = mylink || [
   {logo: 'B', logoType: 'image', url: './images/bili.png'},
-  {logo: 'U', logoType: 'text', url: 'http://www.ui.cn/'},
-  {logo: 'D', logoType: 'text', url: 'https://dribbble.com/'},
-  {logo: 'G', logoType: 'text', url: 'https://gitee.com/'},
-  {logo: 'I', logoType: 'text', url: 'https://www.iconfont.cn/'},
-  {logo: 'V', logoType: 'text', url: 'https://cn.vuejs.org/'},
-  {logo: 'E', logoType: 'text', url: 'https://element.eleme.cn/'},
+  {logo: 'U', logoType: 'text', url: 'http://www.ui.cn'},
+  {logo: 'D', logoType: 'text', url: 'https://dribbble.com/dsf'},
+  {logo: 'G', logoType: 'text', url: 'https://gitee.com/dfs'},
+  {logo: 'I', logoType: 'text', url: 'https://www.iconfont.cn/a/d/s'},
+  {logo: 'V', logoType: 'text', url: 'https://cn.vuejs.org'},
+  {logo: 'E', logoType: 'text', url: 'https://element.eleme.cn'},
 ]
-
+const simplifyUrl = (url) => {//https:qq.com.cn
+   let url1=url.replace('https://', '')
+    .replace('http://', '')
+    .replace('https://www.', '')
+    .replace('http://www.', '')// cn.vuejs.org   ui.cn/sddf/sdf
+  let xie=url1.indexOf('/') //3 -1
+  if(xie!=-1){
+  return  url1.substring(0,xie)
+  }
+  return url1
+}
 const render = () => {
   $sieList.find('li:not(.last)').remove()
   hasMap.forEach(node => {
@@ -21,7 +31,7 @@ const render = () => {
       <a href="${node.url}">
         <div class="site">
           <div class="logo">${node.logo}</div>
-          <div class="link">${node.url}</div>
+          <div class="link">${simplifyUrl(node.url)}</div>
         </div>
       </a>
     </li>`).insertBefore($lastLi)
@@ -40,7 +50,7 @@ $('.iconButton')
     hasMap.push({
       logo: url[0].toUpperCase(),
       logoType: 'text',
-      url: url
+      url: url1
     })
     render()
   })
