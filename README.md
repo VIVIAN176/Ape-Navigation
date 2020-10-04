@@ -9,6 +9,7 @@ parcel src/index.html
 ```
 ### build
 ```
+parcel build src/index.html --no-minify --public-url ./
 yarn build
 ```
 
