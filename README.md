@@ -5,12 +5,12 @@
 ### 开发
 ```
 yarn global add parcel-bundler
+
 parcel src/index.html
 ```
 ### build
 ```
-parcel build src/index.html --no-minify --public-url ./
-//yarn build
+parcel build src/index.html --no-minify --public-url ./     // 可配置脚本直接允许yarn build
 ```
 
 ### 技术栈
